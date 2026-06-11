@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Finding the largest numnber using arguments</p>
+        <p id="demo"></p>
+        <script>
+            function findMax () {
+                var i;
+                var max = -Infinity;
+                for(i = 0; i < arguments.length; i++) {
+                    if (arguments[i] > max) {
+                        max = arguments[i];
+                    }
+                }
+                return max;
+            }
+            document.getElementById("demo").innerHTML = findMax(20, 5, 12, 8);
+
+            var value = Math.abs(20);
+            document.write("demo test value : "+ value +" <br>");
+
+            value = Math.acos(-1);
+            document.write("demo1 test value : "+ value +" <br>");
+
+            value = Math.asin(1);
+            document.write("demo2 test value : "+ value +" <br>");
+
+            value = Math.atan(.5);
+            document.write("demo3 test value : "+ value +" <br>");
+        </script>
+    </body>
+</html>
